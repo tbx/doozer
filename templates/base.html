@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Mozilla Labs - Game On 2010</title>
+    <title>Mozilla Labs - DemoParty 2011</title>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,7 +19,7 @@
   <body class="{% block class %}{% endblock %}">
     <div id="page">
       <header class="menu">
-          <a class="toplogo" href="http://www.mozillalabs.com/gaming/" target="_blank">
+          <a class="toplogo" href="http://www.mozillalabs.com/demoparty/" target="_blank">
             <img src="{{ MEDIA_URL }}img/logo.png" border="0">
           </a>
           {% navigation %}
@@ -27,10 +27,10 @@
             {% if user.is_authenticated %}
               signed in as {{ user.username }} |
               {% waffle allow_submissions %}
-                <a href="{% url games.mine %}">your games</a>|
+                <a href="{% url games.mine %}">your demos</a>|
               {% else %}
                 {% if user.game_set.exists %}
-                  <a href="{% url games.mine %}">your games</a>|
+                  <a href="{% url games.mine %}">your demos</a>|
                 {% endif %}
               {% endwaffle %}
               {% waffle allow_voting %}
@@ -60,7 +60,7 @@
 
       <footer>
         <a href="http://www.mozillalabs.com"><img class="logo" src="{{ MEDIA_URL }}img//labs-logo.png" border="0"></a>
-        Copyright &copy; 2005-2010 Mozilla. All rights reserved.
+        Copyright &copy; 2005-2011 Mozilla. All rights reserved.
         <a href="http://www.mozilla.com/en-US/privacy-policy.html">Privacy Policy</a>
         <a href="http://www.mozilla.com/en-US/about/legal.html">Legal Notices</a>
       </footer>
