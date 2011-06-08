@@ -6,10 +6,10 @@ def nav(request):
         'menu' : [
             ('Home', 'home'),
             ('Gallery', 'games.view_list'),
-            ('Rules', 'rules'),
+            ('Categories', 'categories'),
             ('Judges', 'judges'),
             ('Prizes', 'prizes'),
-            ('Resources', 'resources'),
+            ('Parties', 'parties'),
         ],
         'location' : request.path,
     }

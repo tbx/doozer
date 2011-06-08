@@ -12,12 +12,12 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     url(r'^$', direct_to_template, {'template': 'static/home.html'}, name='home'),
     url(r'^how$', direct_to_template, {'template': 'static/how.html'}, name='how'),
-    url(r'^rules$', direct_to_template, {'template': 'static/rules.html'}, name='rules'),
+    url(r'^categories$', direct_to_template, {'template': 'static/categories.html'}, name='categories'),
     url(r'^fineprint$', direct_to_template, {'template': 'static/fineprint.html'}, name='fineprint'),
     url(r'^prizes$', direct_to_template, {'template': 'static/prizes.html'}, name='prizes'),
     url(r'^judges$', direct_to_template, {'template': 'static/judges.html'}, name='judges'),
     url(r'^judging$', direct_to_template, {'template': 'static/judging.html'}, name='judging'),
-    url(r'^resources$', direct_to_template, {'template': 'static/resources.html'}, name='resources'),
+    url(r'^parties$', direct_to_template, {'template': 'static/parties.html'}, name='parties'),
 )
 
 if settings.DEBUG:
