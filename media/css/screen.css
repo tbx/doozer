@@ -4,29 +4,6 @@ src: url('/media/fonts/cellphone_fc_small.ttf');
 src: local('☺'), url("/media/fonts/cellphone_fc_small.ttf") format("truetype");
 }
 
-@font-face {
-font-family: "OrbitronMed";
-src: url('/media/fonts/orbitron-medium.eot');
-src: local('☺'), url("/media/fonts/orbitron-medium.otf") format("opentype");
-}
-@font-face {
-font-family: "OrbitronBold";
-src: url('/media/fonts/orbitron-medium.eot');
-src: local('☺'), url("/media/fonts/orbitron-bold.otf") format("opentype");
-}
-
-@font-face{
-font-family: 'Karnivore';
-src: url('/media/fonts/KARNIBLA.eot');
-src: local('☺'), url('/media/fonts/KARNIBLA.ttf') format('truetype');
-}
-
-@font-face{
-font-family: 'Matiz';
-src: url('/media/fonts/Matiz.eot');
-src: local('☺'), url('/media/fonts/Matiz.ttf') format('truetype');
-}
-
 html {
     padding-bottom: 0px; 
     padding-top: 0px;
@@ -479,6 +456,44 @@ nav a:hover {color: white; text-decoration: none;}
     margin-right: 1.2em;
 }
 
+.parties {
+    clear: both;
+}
+
+.parties div h2 {
+    line-height: 1em;
+}
+
+
+.parties h2 {
+	padding-top: 0em;
+}
+
+.parties h3 {
+	color: #DDDA8A;
+	margin-top: -1em;
+}
+
+.parties div {
+    float: left;
+    width: 100%;
+}
+
+.parties div:nth-child(2n+1) {
+    clear: left;
+}
+
+.parties div p {
+    padding-left: 170px;
+    padding-right: 30px;
+    width: auto;
+}
+
+.parties div img {
+    float:left;
+    margin-right: 1.2em;
+}
+
 .prizes #page {
     padding: 20px 0;
     width: 980px;
@@ -496,10 +511,11 @@ body.prizes header, body.prizes footer, body.prizes h1{
     display: block;
     padding-left: 50%;
     /*height: 400px;*/
-    line-height: 1.5em;
+    line-height: 2em;
     width: 50%;
     position: relative;
 }
+
 
 .winners .grandprize h2 {
     font-size: 24px;
@@ -573,50 +589,6 @@ ul.prizelist {
     padding: 3px 0 3px 10px;
 }
 
-.grandprize li {
-    cursor: pointer;
-    position: relative;
-    -moz-transition: background .1s ease-in-out;
-}
-
-.grandprize li p,
-.grandprize li ul {
-    -moz-border-radius: 6px 0 6px 6px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
-    margin: 0;
-    z-index: 1;
-    padding: 1em 2em;
-    position: absolute;
-    pointer-events: none;
-    right: 100%;
-    height: auto;
-    top: 0;
-    font-size: .9em;
-    width: 360px;
-    background: #444;
-    -moz-transition: opacity .1s ease-in-out;
-    opacity: 0;
-}
-
-.grandprize li:hover p,
-.grandprize li:hover ul {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.grandprize li:hover {
-    -moz-border-radius: 0 6px 6px 0;
-    -webkit-border-radius: 0 6px 6px 0;
-    border-radius: 0 6px 6px 0;
-    background: #444;
-    list-style-type: square;
-}
-
-.grandprize > li:first-child span {
-    font-size: 1.2em;
-    font-weight: bold;
-}
 
 .categoryprizes {
     padding: 40px;
@@ -720,4 +692,14 @@ article:after,
     clear: both;
     height: 0;
     visibility: hidden;
+}
+
+
+
+.image_categories {
+		border-width:2px;
+	  border-style:solid;
+	  border-color:#FDEB6A;
+		margin-top:45px; 
+		margin-right:30px;
 }

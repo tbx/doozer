@@ -1,6 +1,52 @@
 {% extends "base.html" %}
+{% load flatblock_tags %}
 
-{% block class %}categories copy{% endblock %}
+{% block class %}prices copy{% endblock %}
+
 
 {% block content %}
+  <h1>Categories</h1>
+<p style="width: 100%!important;">Submit your demo and win prizes in one of the following categories. 
+	<br/>Deadline: 1. August 2011
+	<br/>Generall rules: Testing platform is the latest Firefox release, no plug-ins or add-ons installed, no extras. 
+	If your demo runs in other modern web browers, too – That would be fantastic!</p>
+  <section class="parties">
+	<div>
+	<a href="https://mozillademos.org/demos/nocomply/demo.html"><img class="image_categories" src="/media/img/demo_example_nocomply.png"></a>
+    <h2>Main Web Demo</h2>
+    <h3>WebGL, Canvas, anything goes - get NUTS!!</h3>
+	<p>Click on the image to launch example demo</p>
+	</div>
+	
+	<div>
+	<a href="http://mrdoob.com/131/Clouds"><img class="image_categories" src="/media/img/demo_example_clouds.png"></a>
+	<h2>Single Effect Demo</h2>
+    <h3>Submit a single beautiful or mind-blowing effect. Anything goes.</h3>
+	<p>Click on the image to launch example demo</p>
+	</div>
+	
+	<div>
+	<a href="http://cubicvr.org/CubicVR.js/bd3/BeatDetektor3HD.html"><img class="image_categories" src="/media/img/demo_example_audio.png"></a>
+	<h2>Audio Demo</h2>
+    <h3>Demos with focus on audio, e.g. generate music, audio api…</h3>
+	<p>Click on the image to launch example demo</p>
+	</div>
+
+	<div>
+	<a href="http://www.romancortes.com/blog/pure-css-coke-can/"><img class="image_categories" src="/media/img/demo_example_css3.png"></a>
+	<h2>CSS3 Demo</h2>
+    <h3>Blow us away with CSS3 - Transitions, Animations, etc.</h3>
+	<p>Click on the image to launch example demo</p>
+	</div>
+	
+	<div>
+	<a href="http://fromme-toyou.tumblr.com/tagged/cinemagraph/"><img class="image_categories" src="/media/img/demo_example_gif.png"></a>
+	<h2>Animated GIF + SVG</h2>
+    <h3>Maximum file size 512k, blow us away!</h3>
+	<p>Click on the image to launch example demo</p>
+	</div>
+	
+
+  </section>
+  
 {% endblock %}

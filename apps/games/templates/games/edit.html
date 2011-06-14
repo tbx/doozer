@@ -39,7 +39,7 @@
       <!-- {{ form.as_ul }} -->
       <li>{{ form.name.errors }}{{ form.name.label_tag }}{{ form.name }}</li>
       <li>{{ form.description.errors }}{{ form.description.label_tag }}{{ form.description }}</li>
-      <li>{{ form.url.errors }}<label for="id_url">URL of the game:</label>{{ form.url }}</li>
+      <li>{{ form.url.errors }}<label for="id_url">URL of the demo:</label>{{ form.url }}</li>
       <li>
         {{ form.source.errors }}
         <label for="id_source" class="optional">
@@ -49,7 +49,7 @@
       <li>
         <label for="id_resources" class="optional">
           Describe the tools, libraries and other resources you used in the
-          making of this game:
+          making of this demo:
         </label>{{ form.resources }}
       </li>
       <input name="{{ form.accept.html_name }}" type="hidden" value="true">

@@ -3,7 +3,7 @@
 {% block class %}form{% endblock %}
 
 {% block content %}
-  <h1>Submit a Game</h1>
+  <h1>Submit a Demo</h1>
   {% if form.errors %}
     <ul class="errorlist">
       <li>Please fix the errors and submit again.</li>
@@ -29,7 +29,7 @@
         </label>{{ form.resources }}
       </li>
       {{ form.accept.errors }}
-      {{ form.accept }}<label>I accept the <a target="_blank" href="/fineprint">Game On! 2010 Terms and Conditions</a></label>
+      {{ form.accept }}<label>I accept the <a target="_blank" href="/fineprint">DemoParty 2011 Terms and Conditions</a></label>
     </ul>
     <input type="submit" value="Submit your game" />
   </form>
