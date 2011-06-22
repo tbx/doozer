@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load flatblock_tags %}
+{% load waffle_tags %}
 
 {% block class %}home gameover{% endblock %}
 
@@ -13,7 +14,14 @@
   <div class="button right">
     <a href="{% url parties %}"><br>Demo Parties</a>
   </div>
-  <div class="button left">
-    <a href="{% url games.winners %}"><br>Submit Demo</a>
-  </div>
+  {% waffle allow_submissions %}
+    <div class="button left">
+      <a href="{% url games.create %}"><br>Submit Demo</a>
+    </div>
+  {% endwaffle %}
+  {% waffle show_winners %}
+    <div class="button left">
+      <a href="{% url games.winners %}"><br>See the Winners</a>
+    </div>
+  {% endwaffle %}
 {% endblock %}

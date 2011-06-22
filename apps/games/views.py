@@ -116,7 +116,7 @@ def finalists(request):
     return render(request, 'games/finalists.html', {'games': games})
 
 
-@waffle('allow_gallery')
+@waffle('show_winners')
 def winners(request):
     """View the list of winners."""
     return render(request, 'games/winners.html')
