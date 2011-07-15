@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import *
 from django.views.generic.simple import direct_to_template
 from django.conf import settings
+from core.views import party
 
 from django.contrib import admin
 admin.autodiscover()
@@ -18,6 +19,7 @@ urlpatterns = patterns('',
     url(r'^judges$', direct_to_template, {'template': 'static/judges.html'}, name='judges'),
     url(r'^judging$', direct_to_template, {'template': 'static/judging.html'}, name='judging'),
     url(r'^parties$', direct_to_template, {'template': 'static/parties.html'}, name='parties'),
+    url(r'^parties/(?P<party_name>[\w-]+)?', party, name='party'),
 )
 
 if settings.DEBUG:
