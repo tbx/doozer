@@ -509,10 +509,10 @@ body.prizes header, body.prizes footer, body.prizes h1{
     /*background: #858242 url('/media/img/grandprize.png') no-repeat 30px 20px;*/
     background: url('/media/img/grandprize.png') no-repeat 30px 20px rgba(0,0,0,0);
     display: block;
-    padding-left: 50%;
+    padding-left: 40%;
     /*height: 400px;*/
     line-height: 2em;
-    width: 50%;
+    width: 60%;
     position: relative;
 }
 
