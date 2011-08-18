@@ -8,7 +8,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^accounts/', include('registration.urls')),
-    (r'^games/', include('games.urls')),
+    (r'^gallery/', include('games.urls')),
     (r'^vote', include('vote.urls')),
     (r'^admin/', include(admin.site.urls)),
     url(r'^$', direct_to_template, {'template': 'static/home.html'}, name='home'),
